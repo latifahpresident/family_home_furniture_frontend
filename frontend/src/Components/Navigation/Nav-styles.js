@@ -48,6 +48,8 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: { 
             color: `${whiteColor}`,
             width: "100%",
+            animationDuration: '8s',
+
         //   marginRight: "10rem"
         },
       },

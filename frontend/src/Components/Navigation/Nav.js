@@ -21,12 +21,15 @@ const theme = createTheme({
     'cursive',].join(','),
     h2: {
       fontFamily: ['Chilanka',].join(','),
+    },
+    h1: {
+      fontFamily: ['Roboto',].join(','),
     }
   },});
 
 const NavBar = (props) => {
   const classes = useStyles(props);
-  const loggedIn = useSelector((state: RootStateOrAny) => state.user);
+  const loggedIn = useSelector(state => state.user.loggedIn);
   const admin = useSelector(state => state.user.admin);
   const agent = useSelector(state => state.user.agent);
   const cart = useSelector(state => state.user.cart)

@@ -3,12 +3,10 @@ import styled from 'styled-components';
 const goldColor = '#F4D212';
 const purpleColor = '#AA65FF';
 const whiteColor = '#FFFF';
-const fontColor = '#252525';
 const greenColor = "#366F82";
 const yellowColor = "#F2CC7E";
 // const fontColor = '#0C1D33';
 const lightyellowColor = '#FEFCEE';
-const lightGrayColor = '#CCCDCE';
 const secondaryBtnColor  = "#80D0C7";
 const mainBtnColor = "#35ACDA";
 const GreenRadient = "#80D0C7";
@@ -21,6 +19,8 @@ const tablet = '600px';
 export const orangeAccentColor = "#BC5801";
 export const redAccentColor = "#BF1B14";
 export const darkGrayAccentColor = "#3F4044";
+export const fontColor = '#252525';
+export const lightGrayColor = '#CCCDCE';
 
 export const Wrapper = styled.main`
     margin-top: 2rem;
@@ -210,9 +210,7 @@ export  {
     whiteColor, 
     goldColor,
     purpleColor,
-    fontColor,
     lightyellowColor,
-    lightGrayColor,
     mainBtnColor,
     secondaryBtnColor,
     GreenRadient,

@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
-import { darkGrayAccentColor,  } from "./../../../GlobalStyles/styles";
+import { darkGrayAccentColor, orangeAccentColor, whiteColor, fontColor } from "./../../../GlobalStyles/styles";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -34,6 +34,15 @@ menuLink: {
   padding: 0,
   // border: "1px solid green"
 },
+squareBtn: {
+  backgroundColor: `${orangeAccentColor}`,
+  border: `2px solid ${orangeAccentColor}`,
+  borderRadius: 0,
+  color: `${whiteColor}`,
+  fontWeight: 700,
+  letterSpacing: 1.5,
+  height: 50,
+}
   }));
 
   export { useStyles }
