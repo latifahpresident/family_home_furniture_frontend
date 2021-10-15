@@ -1,0 +1,1 @@
+export const categories = ["Living Room", "Dining Room", "Bedrooms", "Bunkbeds", "Mattresses", "Recliners"]

@@ -3,43 +3,24 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { makeStyles } from '@material-ui/core/styles';
 import Grid  from "@material-ui/core/Grid";
-
-const useStyles = makeStyles((theme) => ({
-    carousel: {
-        margin: 'auto',
-        width: '80%',
-        //  border: "1px solid green",
-               
-    },
-    slide: {
-        // border: "1px solid red",
-        width: "100%",
-        height: "450px",
-        textAlign: "center",
-        display: "flex",
-  justifyContent: "center",
-        [theme.breakpoints.down('sm')]: {
-            height: "270px",
-          },
-    },
-    image: {
-
-    }
-}));
+import RevSec from "./../../Assets/images/rEVERSIBLE_SECTIONAL.jpeg";
+import LivingRoomSet from "./../../Assets/images/sven-brandsma-GZ5cKOgeIB0-unsplash.jpg";
+import QueenSet from "./../../Assets/images/khloe-arledge-QDMmnuvKGGU-unsplash.jpg";
+import { useStyles } from "./Home-styles"
   
-const ResponsiveCarousel = () => {
-    const classes = useStyles();
+const ResponsiveCarousel = (props) => {
+    const classes = useStyles(props);
     return (
 	<Grid className={classes.carousel}>
 		<Carousel showThumbs={false} showStatus={false} autoPlay={true} infiniteLoop={true} >
 			<div className={classes.slide}>
-				<img style={{width: "100%"}} src={require("./../../Assets/images/rEVERSIBLE_SECTIONAL.jpeg")} alt="Reversible Gray Sectional" />
+				<img style={{width: "100%"}} src={`${RevSec}`} alt="Reversible Gray Sectional" />
 			</div>
 			<div className={classes.slide}>
-				<img  src={require("./../../Assets/images/sven-brandsma-GZ5cKOgeIB0-unsplash.jpg")} alt="livingroom set"/>
+				<img  src={`${LivingRoomSet}`} alt="livingroom set"/>
 			</div>
 			<div className={classes.slide}>
-				<img  src={require("./../../Assets/images/khloe-arledge-QDMmnuvKGGU-unsplash.jpg")} alt="Queen Bedroom Set"/>
+				<img  src={`${QueenSet}`} alt="Queen Bedroom Set"/>
 			</div>
 		</Carousel>
 	</Grid>

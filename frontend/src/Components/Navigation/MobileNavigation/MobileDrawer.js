@@ -109,7 +109,7 @@ import { useStyles } from "./MobileNavigation-styles"
       <ListItem >
       <ListItemText className={classes.subMenuText} primary="Shop By Department"/>
       </ListItem>
-        {categories.map((category, index) => (
+        {categories.map((category) => (
           <ListItem className={classes.listItem} component={ Link }  key={category}  to={`/product/?col=category&filter=${category}`}>
             <ListItemText className={classes.listItemText} inset primary={category} />
           </ListItem>

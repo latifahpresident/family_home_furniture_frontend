@@ -211,6 +211,26 @@ const useStyles = makeStyles((theme) => ({
     // border: "1px solid yellow",
   
   },
+
+  //==========CAROUSEL STYLES==========
+
+  carousel: {
+    margin: 'auto',
+    width: '100%',
+    //  border: "1px solid green",
+           
+},
+  slide: {
+      // border: "1px solid red",
+    width: "100%",
+    height: "450px",
+    textAlign: "center",
+    display: "flex",
+    justifyContent: "center",
+    [theme.breakpoints.down('sm')]: {
+        height: "270px",
+      },
+  },
   }));
 
   export { useStyles };
