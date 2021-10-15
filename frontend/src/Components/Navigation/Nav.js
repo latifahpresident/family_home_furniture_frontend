@@ -9,7 +9,7 @@ import Badge from '@material-ui/core/Badge';
 import {ExitToApp, LockOpen, LocalShipping, ShoppingCartOutlined,  CreditCard, WeekendOutlined, AccountCircleOutlined, } from '@material-ui/icons';
 import Grid  from "@material-ui/core/Grid";
 import {logOut} from '../../Store/Actions/users';
-import { iconColor, } from "./../../GlobalStyles/styles";
+import { fontColor, iconColor, } from "./../../GlobalStyles/styles";
 import Search from "./../Search/Search";
 import ButtonComp from "./../UI/Button/Button"
 import MobileNavigation from "./MobileNavigation/MobileNavigation";
@@ -24,6 +24,11 @@ const theme = createTheme({
     },
     h1: {
       fontFamily: ['Roboto',].join(','),
+      color: `${fontColor}`
+    },
+    span: {
+      fontFamily: ['Chilanka',].join(','),
+      color: `${fontColor}`
     }
   },});
 
@@ -100,7 +105,7 @@ const NavBar = (props) => {
                     buttonStyle="iconButton"> 
                     <AccountCircleOutlined  className={classes.icon}/> 
                   </ButtonComp>
-                  <Typography variant="button" >
+                  <Typography variant="button" className={classes.link} >
                     {loggedIn ? "ACCOUNT" : "SIGNUP"}
                   </Typography>
                 </NavLink> 
@@ -117,7 +122,7 @@ const NavBar = (props) => {
                       <ShoppingCartOutlined className={classes.icon}/>
                     </Badge> 
                   </ButtonComp>
-                <Typography variant="button">Cart</Typography>
+                <Typography variant="button" className={classes.link}>Cart</Typography>
                 </NavLink>
                   {admin || loggedIn? 
                 <NavLink 
@@ -132,7 +137,7 @@ const NavBar = (props) => {
                       <LocalShipping className={classes.icon}/> 
                     </Badge> 
                   </ButtonComp>
-                  <Typography variant="button"> Orders</Typography>
+                  <Typography className={classes.link} variant="button"> Orders</Typography>
                 </NavLink> : null
                   }
                   {loggedIn ? 
@@ -143,7 +148,7 @@ const NavBar = (props) => {
                     buttonStyle="iconButton" >
                     <ExitToApp className={classes.icon}/> 
                   </ButtonComp> 
-                  <Typography style={{color: `${iconColor}`}} variant="button">LOGOUT</Typography>
+                  <Typography className={classes.link}  variant="button">LOGOUT</Typography>
                 </div> 
                 :
                 <div className={classes.portal} >
@@ -155,7 +160,7 @@ const NavBar = (props) => {
                         buttonStyle="iconButton">
                         <LockOpen  className={classes.icon}/> 
                       </ButtonComp> 
-                      <Typography style={{color: `${iconColor}`}} variant="button">LOGIN</Typography>
+                      <Typography className={classes.link} variant="button">LOGIN</Typography>
                     </NavLink>
                   </div>
                 </div>

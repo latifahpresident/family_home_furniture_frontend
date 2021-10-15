@@ -71,10 +71,10 @@ import { useStyles } from "./MobileNavigation-styles"
     <div>
         <div>
           <Button 
-            edge="start"
+            // edge="start"
              aria-label="menu" 
              onClick={toggleDrawer(true)}>
-               <Menu edge /></Button>
+               <Menu  /></Button>
           <Drawer  open={state} onClose={toggleDrawer( false)} >
           <div
       className={classes.fullList}

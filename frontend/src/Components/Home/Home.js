@@ -12,6 +12,8 @@ import recliners from "./../../Assets/images/recliners.jpeg";
 import { useStyles } from "./Home-styles";
 import Button from "./../UI/Button/Button";
 import { AddShoppingCartOutlined, TouchAppOutlined,  MarkunreadMailboxOutlined } from "@material-ui/icons";
+import {savings } from "./../../Util/data";
+
 // Material UI breakpoints
 // value         |0px     600px    960px    1280px   1920px
 // key           |xs      sm       md       lg       xl
@@ -123,7 +125,19 @@ console.log("products", products)
               </Grid>
             </Grid>
 
-
+            {/* SAVINGS SECTION */}
+            <Grid className={classes.savingsSection}> 
+              <Typography component="h1" variant="h1" className={`${classes.heading, classes.savingsHeader}`}> <Typography component="span" varient="span" className={classes.span}>it's savings weather</Typography> TREAT YOURSELF TO THESE DEALS </Typography>
+              <Grid className={classes.savingsWrapper}>
+                {savings.map(saving => (
+                  <Grid key={saving.title} className={classes.savingsImageWrapper}>
+                    <img src={saving.image} alt={saving.title} className={classes.savingsImage}/>
+                  </Grid>
+                ))}
+              </Grid>
+            </Grid>
+            
+            
 
             <Typography className={classes.heading} component="h1" variant="h1">Welcome to Family Home Furniture</Typography>
             <Typography className={classes.paragraph} component="p" variant="body1">

@@ -69,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
       justifyContent: "space-around",
       margin: "2rem 0",
       flexWrap: "wrap",
-      [theme.breakpoints.down('sm')]: {
+      [theme.breakpoints.down('xs')]: {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center"
@@ -137,7 +137,7 @@ const useStyles = makeStyles((theme) => ({
       margin: "2rem 0",
       padding: "2rem 0",
       color: `${fontColor}`,
-      [theme.breakpoints.down('sm')]: {
+      [theme.breakpoints.down('xs')]: {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center"
@@ -201,7 +201,77 @@ const useStyles = makeStyles((theme) => ({
     // marginTop: "1rem", 
   },
  
+//=======SAVINGS SECTION===========
+savingsSection: {
+  display: "flex",
+  flexDirection: "column",
+  marginTop: "10rem",
+  alignItems: "center",
+  [theme.breakpoints.down('sm')]: {
+    marginTop: "7rem"
+  },
+  
+},
+savingsWrapper: {
+  // border: "1px solid red",
+  display: "flex",
+  justifyContent: "space-around",
+  alignItems: "center",
+  flexWrap: "wrap",
+  justifyContent: "center",
+  [theme.breakpoints.down('sm')]: {
+    flexWrap: "no-wrap",
+  },
 
+},
+savingsHeader: {
+  fontSize: "3.5rem",
+  [theme.breakpoints.down('sm')]: {
+    fontSize: "2rem",
+  },
+  [theme.breakpoints.down('xs')]: {
+    fontSize: "1.3rem",
+    fontWeight: 800,
+    display: "flex",
+    flexDirection: "column",
+  },
+},
+
+span: {
+  fontSize: "3rem",
+  fontWeight: 800,
+  marginRight: "1rem",
+  color: `${orangeAccentColor}`,
+  [theme.breakpoints.down('sm')]: {
+    fontSize: "1.6rem",
+  },
+  [theme.breakpoints.down('xs')]: {
+    fontSize: "1.3rem",
+    marginRight: "0rem",
+  },
+},
+savingsImageWrapper: {
+  // border: "1px solid purple",
+  width: 360,
+  height: 420,
+  margin: "2rem",
+  boxShadow: "0 8px 6px rgb(0 0 0 / 20%)",
+  [theme.breakpoints.down('sm')]: {
+    width: 160,
+    height: 160,
+    margin: "1.3rem"
+  },
+
+},
+savingsImage: {
+  // border: "1px solid hotpink",
+  width: 360,
+  height: 420,
+  [theme.breakpoints.down('sm')]: {
+    width: 160,
+    height: 160,
+  },
+},
   
 
  

@@ -32,51 +32,46 @@ export const Wrapper = styled.main`
     
 `;
 
-export const Header = styled.header`
 
+// export const ContentArea = styled.section`
+//     display: flex;
+//     flex-direction: ${props => props.horizontal ? null : 'column'};
+//     align-items: center;
+//     justify-content: ${props => props.horizontal ? 'space-around' : null};
+//     margin: 3rem 1rem;
+//     /* margin-bottom: 2rem; */
+//     width: ${props => props.horizontal ? '80%' : null};
+//     /* border: 1px solid green; */
+//     @media only screen and (max-width: ${smrtphn}) {
+//         width: 90%;
+//         display: flex;
+//         flex-direction: ${props => props.reverse ? 'column-reverse' : 'column'};
+//         margin: ${props => props.about ? '2rem auto' : null};
+//         /* border: 1px solid black; */
+//     }
 
-    /* border: 1px solid red; */
-`;
-
-export const ContentArea = styled.section`
-    display: flex;
-    flex-direction: ${props => props.horizontal ? null : 'column'};
-    align-items: center;
-    justify-content: ${props => props.horizontal ? 'space-around' : null};
-    margin: 3rem 1rem;
-    /* margin-bottom: 2rem; */
-    width: ${props => props.horizontal ? '80%' : null};
-    /* border: 1px solid green; */
-    @media only screen and (max-width: ${smrtphn}) {
-        width: 90%;
-        display: flex;
-        flex-direction: ${props => props.reverse ? 'column-reverse' : 'column'};
-        margin: ${props => props.about ? '2rem auto' : null};
-        /* border: 1px solid black; */
-    }
-
-    svg {
-        width: 50%;
-        border: 1px solid red;
-    }
+//     svg {
+//         width: 50%;
+//         border: 1px solid red;
+//     }
    
-`;
+// `;
 
-export const NavWrapper = styled.nav`
-    display: flex;
-    justify-content: ${props => props.endNav ? 'flex-end': null};
-    background-color: ${props => props.endNav ? `${purpleColor}` : 'none'};
-    height: 7vh;
-    font-weight: 700;
-    font-size: 1rem;
-    box-sizing: border-box;
-    border-bottom: ${props => props.endNav ? `5px solid ${goldColor}` : 'none'};
-    @media only screen and (max-width: ${tablet}) {
-        height: 9vh;
-    }
+// export const NavWrapper = styled.nav`
+//     display: flex;
+//     justify-content: ${props => props.endNav ? 'flex-end': null};
+//     background-color: ${props => props.endNav ? `${purpleColor}` : 'none'};
+//     height: 7vh;
+//     font-weight: 700;
+//     font-size: 1rem;
+//     box-sizing: border-box;
+//     border-bottom: ${props => props.endNav ? `5px solid ${goldColor}` : 'none'};
+//     @media only screen and (max-width: ${tablet}) {
+//         height: 9vh;
+//     }
     
 
-`;
+// `;
 
 export const LinkContainer = styled.ul`
     display: flex;

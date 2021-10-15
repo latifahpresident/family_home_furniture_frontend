@@ -89,7 +89,12 @@ const useStyles = makeStyles((theme) => ({
         width: "60%",
         marginRight: "1rem",
         "&:visited": {
+          color: `${fontColor}`,
+      },
+        ".MuiTypography-button": {
+          "&:visited": {
             color: `${fontColor}`,
+        },
         },
         [theme.breakpoints.down('sm')]: { 
             "&:visited": {
