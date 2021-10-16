@@ -9,6 +9,10 @@ const useStyles = makeStyles((theme) => ({
         height: 40,
         alignItems: "center",
         justifyContent: "center",
+        position: "fixed",
+        zIndex: 2,
+        top: 170,
+        width: "100%",
         [theme.breakpoints.down('md')]: {
             display: "none",
           },

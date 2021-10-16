@@ -4,10 +4,12 @@ const useStyles = makeStyles((theme) => ({
     root: {
       color: `${fontColor}`,
       width: "80%",
-      margin: "0 auto",
+      margin: "13.1rem  auto 0 auto" ,
       // border: "10px solid purple",
-      [theme.breakpoints.down("sm")]: {
+      [theme.breakpoints.down("xs")]: {
         width: "100%",
+        margin: "6rem  auto 0 auto" ,
+
       },
     },
     financing: {
@@ -273,23 +275,27 @@ savingsImage: {
   },
 },
   
-
- 
- 
- 
-  centerSection: {
-    // color: "#366E82",
-    width: "100%",
-    margin: "2rem 0",
-    textTransform: "uppercase",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
+//===========HIRING SECTION===========
+hiringWrapper: {
+  height: 140,
+  backgroundColor: `${lightGrayColor}`,
+  width: "100%",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  [theme.breakpoints.down('xs')]: {
     flexDirection: "column",
-    paddingTop: "2rem",
-    // border: "1px solid red"
   },
+},
  
+hiringHeading: {
+  fontSize: "3rem",
+  fontWeight: 800,
+  [theme.breakpoints.down('xs')]: {
+    fontSize: "1.3rem",
+    marginBottom: ".5rem"
+  },
+},
  
 
   //==========CAROUSEL STYLES==========

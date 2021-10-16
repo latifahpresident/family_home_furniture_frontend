@@ -7,6 +7,9 @@ const useStyles = makeStyles((theme) => ({
       flexDirection: "column",
       borderBottom: `1.5px solid ${lightGrayColor}`,
       width: "100%",
+      backgroundColor: `${whiteColor}`,
+      position: "fixed",
+      zIndex: 2,
     },
     deliveryWrapper: {
         backgroundColor: `${lightGrayColor}`, 

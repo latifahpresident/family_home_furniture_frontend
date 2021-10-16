@@ -1,6 +1,7 @@
 import React from 'react';
 import {withRouter} from 'react-router-dom';
 import Nav from '../../Components/Navigation/Nav';
+import Footer from "./../../Components/Footer/Footer";
 
 const Layout = (props) => {
     return (
@@ -9,6 +10,7 @@ const Layout = (props) => {
              <main style={{width: "100%", overflow: "hidden"}}>
                 {props.children}
             </main>
+            <Footer/>
         </React.Fragment>
 
     )

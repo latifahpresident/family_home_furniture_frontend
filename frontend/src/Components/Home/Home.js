@@ -12,7 +12,7 @@ import recliners from "./../../Assets/images/recliners.jpeg";
 import { useStyles } from "./Home-styles";
 import Button from "./../UI/Button/Button";
 import { AddShoppingCartOutlined, TouchAppOutlined,  MarkunreadMailboxOutlined } from "@material-ui/icons";
-import {savings } from "./../../Util/data";
+import {savings, categories } from "./../../Util/data";
 
 // Material UI breakpoints
 // value         |0px     600px    960px    1280px   1920px
@@ -137,9 +137,18 @@ console.log("products", products)
               </Grid>
             </Grid>
             
-            
+            <Grid className={classes.hiringWrapper}>
+              <Typography component="h1" variant="h1" className={classes.hiringHeading}>We're growing - <Typography component="span" variant="span" className={classes.span}>come join us on the journey!</Typography>
+              </Typography>
+              <Button
+              aria-label="now hiring"
+              className="squareBtn" 
+              buttonStyle="linkButton"
+              onClick="/chfagent"
+            > Learn More</Button>
+            </Grid>
 
-            <Typography className={classes.heading} component="h1" variant="h1">Welcome to Family Home Furniture</Typography>
+            {/* <Typography className={classes.heading} component="h1" variant="h1">Welcome to Family Home Furniture</Typography>
             <Typography className={classes.paragraph} component="p" variant="body1">
             We pride ourselves on providing fast, affordable and reliable furniture across Central Texas. We believe that leasing furniture should be a thing of the past. Our financing option is hassle free. 
              Owning your furniture outright is easy with us. <a aria-label="Apply Now" target="_blank" rel="noopener noreferrer" className={classes.link} href="https://consumer.snapfinance.com/#/?mid=490237487">Apply Now.</a> 
@@ -149,7 +158,7 @@ console.log("products", products)
               These freelance positions can be done from home anywhere in the United States. 
                We welcome any and everyone willing to go the extra mile to provide quality customer service and sales.
               Interested applicants can <Link to="/chfagent" className={classes.link}>find out more information</Link> on the Family Home Furniture sales agent page.
-            </Typography>
+            </Typography> */}
         
     
 

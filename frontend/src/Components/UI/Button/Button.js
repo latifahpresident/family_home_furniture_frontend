@@ -2,6 +2,7 @@ import React from 'react';
 import IconButton from '@material-ui/core/IconButton';
 import { Button, } from "@material-ui/core";
 import { useStyles } from './Button-styles';
+import { Link } from 'react-router-dom';
 
 const UIButton = (props) => {
     let buttonElement = null;
@@ -30,16 +31,19 @@ const UIButton = (props) => {
             {props.children}
         </Button>
             break;
-        // case('link'):
-        //     buttonElement = 
-        //     <Button 
-        //         className={classes[className]} 
-        //         to={`/${link}`}
-        //         color={color} 
-        //         onClick={onClick}
-                
-        //     >{linkName}</Button>
-        //     break;
+            case('linkButton'):
+            buttonElement = 
+            <Button 
+                component={Link} 
+                className={classes[className]} 
+                aria-label={ariaLabel} 
+                to={`${onClick}`}
+                // variant="contained"
+                type={props.type}
+            >
+                {props.children}
+            </Button>
+                break;
         default: buttonElement = 
         <button>click</button>
     }
