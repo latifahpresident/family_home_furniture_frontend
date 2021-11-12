@@ -8,8 +8,6 @@ const Footer = (props) => {
     const classes = useStyles(props);
     return(
         <div className={classes.root}>
-          
-          {/* <div className={classes.desktop}> */}
           <Grid className={classes.top}>
   
       

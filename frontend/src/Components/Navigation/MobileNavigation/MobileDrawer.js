@@ -71,7 +71,6 @@ import { useStyles } from "./MobileNavigation-styles"
     <div>
         <div>
           <Button 
-            // edge="start"
              aria-label="menu" 
              onClick={toggleDrawer(true)}>
                <Menu  /></Button>

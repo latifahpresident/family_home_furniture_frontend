@@ -8,7 +8,7 @@ const UIButton = (props) => {
     let buttonElement = null;
     const classes = useStyles(props);
     const {className, ariaLabel, onClick, } = props;
-    switch (props.buttonStyle) { // button, icon button, link
+    switch (props.buttonStyle) { 
         case('iconButton'):
             buttonElement = 
             <IconButton 
