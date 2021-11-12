@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "center",
         position: "fixed",
         zIndex: 2,
-        top: 170,
+        top: 140,
         width: "100%",
         [theme.breakpoints.down('md')]: {
             display: "none",
